@@ -10,4 +10,4 @@ with open("tes.csv", mode="w", newline="") as file:
 with open("tes.csv", "r") as file:
     reader = csv.DictReader(file, delimiter=",")
     for row in reader:
-        print(row)
+        print(row['nama'])

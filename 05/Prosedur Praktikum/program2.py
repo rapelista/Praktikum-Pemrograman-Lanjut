@@ -46,6 +46,6 @@ with open('employee.csv', 'r') as file:
             print(f'Column names are {", ".join(row)}')
             line_count += 1
         print(
-            f'\t{row["emp_name"]} works im the {row["dept"]} department, and was born in {row["birth_month"]}')
+            f'{row["emp_name"]} works in the {row["dept"]} department, and was born in {row["birth_month"]}')
         line_count += 1
     print(f'Processed {line_count} lines.')

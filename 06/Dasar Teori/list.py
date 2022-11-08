@@ -1,4 +1,7 @@
 # Creating a List
+from re import L
+
+
 List = []
 print("Blank List: ")
 print(List)
@@ -18,4 +21,5 @@ print(List[4])
 # Multi-Dimensional List
 List = [['Red', 'Green'], ['Yellow']]
 print("\nMulti-Dimensional List: ")
+print(List)
 print(List)

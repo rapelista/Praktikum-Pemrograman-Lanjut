@@ -17,3 +17,10 @@ print(tuple(list1))
 Tuple1 = tuple('Informatika')
 print("\nTuple with the use of function: ")
 print(Tuple1)
+
+tuple1 = (1, 2, 3)
+print(tuple1)
+tuple1 = list(tuple1)
+tuple1[1] = 10
+tuple1 = tuple(tuple1)
+print(tuple1)

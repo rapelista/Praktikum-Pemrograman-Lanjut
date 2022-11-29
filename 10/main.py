@@ -13,21 +13,19 @@ class App(Frame):
         alert.mainloop()
 
     def login_page(self):
-        StringVar()
         self.login_frame = Frame(self)
         self.login_info = {}
         for i, label in enumerate(["Username", "Password"]):
             self.login_info[label.lower()] = StringVar()
-            Label(self.login_frame, text=label,
-                  width=10, anchor=W).grid(column=0, row=i)
+            Label(self.login_frame, text=label, width=10,
+                  anchor=W).grid(column=0, row=i)
             Entry(self.login_frame, textvariable=self.login_info[label.lower()]).grid(
                 column=1, row=i)
-        frame_tombol = Frame(self.login_frame)
-        Button(frame_tombol, text="Masuk",
-               command=self.login_btn).grid(column=0, row=0)
-        Button(frame_tombol, text="Cancel", command=self.master.destroy).grid(
+        _ = Frame(self.login_frame)
+        Button(_, text="Masuk", command=self.login_btn).grid(column=0, row=0)
+        Button(_, text="Cancel", command=self.master.destroy).grid(
             column=1, row=0)
-        frame_tombol.grid(columnspan=2)
+        _.grid(columnspan=2)
         self.login_frame.pack()
 
     def login_btn(self):
